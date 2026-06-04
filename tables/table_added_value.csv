@@ -1,0 +1,2 @@
+comparison,dAUROC,CI95
+GBM - LR_clinical (external),0.068,+0.057 to +0.079

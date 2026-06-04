@@ -1,0 +1,2 @@
+subset,n,events,external_AUROC,AUROC_95CI
+ICU LOS > 54h (outcome SCr strictly post-landmark),28372,5116,0.764,0.753-0.776

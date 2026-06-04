@@ -1,0 +1,4 @@
+held_out_db,train_dbs,n,events,AUROC,AUROC_95CI,Calib_slope,CITL,ICI_asis,ICI_recal
+mimic,eicu+sicdb,152722,23939,0.838,0.833-0.842,1.003,0.252,0.023,0.006
+eicu,mimic+sicdb,388957,38646,0.809,0.805-0.813,0.886,-0.842,0.074,0.004
+sicdb,mimic+eicu,59860,6980,0.789,0.780-0.799,1.072,-1.214,0.147,0.004

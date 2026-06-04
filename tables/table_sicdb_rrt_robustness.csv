@@ -1,0 +1,3 @@
+Outcome,external_AUROC,AUROC_95CI
+MAKE30 (full composite),0.794,
+MAKE30 excl. new-RRT (timing-robust),0.784,0.775-0.794

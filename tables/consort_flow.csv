@@ -1,0 +1,4 @@
+source_db,icu_stays_total,after_first_stay,after_age,after_los,after_esrd_excl,final_n
+mimic,73181,50920,50920,50446,48207.0,48207
+eicu,200859,135638,200234,183910,131061.0,131061
+sicdb,27350,21091,27223,26701,,21091

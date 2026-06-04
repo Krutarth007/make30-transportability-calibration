@@ -1,0 +1,4 @@
+Setting,AUROC,Brier,Calib_slope,CITL,ICI,E90
+Internal test,0.859,0.074,1.003,0.006,0.006,0.013
+"External (SICdb), as-is",0.794,0.112,1.054,-1.2,0.142,0.247
+"External (SICdb), recalibrated",0.794,0.085,0.998,0.0,0.002,0.005

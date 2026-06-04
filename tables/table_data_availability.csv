@@ -1,0 +1,4 @@
+source_db,% with any SCr (30d),% with final SCr,% MDRD-imputed baseline
+mimic,98.7,98.7,0.8
+eicu,93.6,93.6,6.4
+sicdb,97.3,97.3,2.6

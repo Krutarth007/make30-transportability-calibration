@@ -1,0 +1,4 @@
+source_db,n,MAKE30_%,Death30_%,NewRRT_%,PersistentRD_%,AKI(KDIGO>=1)_%,median_age,female_%,median_baseline_scr
+eicu,131061,10.46,8.59,1.71,1.43,10.18,65.0,46.05,0.95
+mimic,48207,16.02,13.0,2.27,5.11,23.87,66.0,44.33,0.9
+sicdb,21091,10.78,7.95,3.52,1.64,12.24,70.0,38.02,0.9

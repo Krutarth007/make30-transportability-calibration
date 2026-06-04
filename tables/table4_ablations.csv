@@ -1,0 +1,6 @@
+Feature set,n_features,AUROC_internal,AUROC_external,dAUROC_internal,dAUROC_external,dAUROC_external_95CI
+Full,211,0.8593,0.7942,0.0,0.0,ref
+No-NTEI (drop ntei only),210,0.8595,0.7968,0.0002,0.0027,+0.0003 to +0.0052
+No-nephrotoxin block,194,0.857,0.7856,-0.0023,-0.0085,-0.0112 to -0.0057
+No-urine,202,0.8577,0.797,-0.0016,0.0029,+0.0004 to +0.0054
+No-nephro & no-urine,185,0.8555,0.7889,-0.0038,-0.0052,-0.0081 to -0.0024

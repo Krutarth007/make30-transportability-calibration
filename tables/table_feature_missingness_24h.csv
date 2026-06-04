@@ -1,0 +1,4 @@
+source_db,heart_rate,sbp,dbp,map,resp_rate,spo2,temp,creatinine,bun,sodium,potassium,chloride,bicarbonate,lactate,hemoglobin,wbc,platelet,bilirubin,glucose,urine_rate
+mimic,0.2,0.4,0.4,0.2,0.3,0.1,3.4,1.2,1.3,1.1,1.1,1.2,1.2,41.0,1.6,1.6,1.6,59.9,1.2,1.1
+eicu,1.6,1.5,1.5,1.5,8.5,2.3,88.9,7.9,8.3,8.0,7.4,8.5,9.9,73.2,9.9,10.7,11.5,58.2,5.0,29.3
+sicdb,0.1,0.1,0.1,0.1,1.1,0.2,5.5,3.8,3.2,0.6,0.6,0.7,0.8,0.8,0.5,3.2,3.3,62.8,0.6,100.0

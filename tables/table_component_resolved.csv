@@ -1,0 +1,4 @@
+Component,n,events,AUROC_of_composite_score
+death_within_30d,59860,5120,0.789
+new_rrt_30d,59860,2292,0.825
+persistent_rd_30d,59860,1259,0.742

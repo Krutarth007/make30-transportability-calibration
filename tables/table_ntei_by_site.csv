@@ -1,0 +1,4 @@
+source_db,mean_ntei,median_ntei,frac_exposed
+eicu,0.093,0.0,0.306
+mimic,0.263,0.068,0.521
+sicdb,0.061,0.0,0.253
