@@ -1,0 +1,120 @@
+{
+  "headline": {
+    "primary_model": "GBM_common (common-support, transportable feature set)",
+    "internal_GBM_common": {
+      "AUROC": 0.852,
+      "AUROC_95CI": "0.847\u20130.857",
+      "AUPRC": 0.485,
+      "Brier": 0.076,
+      "Calib_slope": 1.008,
+      "ICI": 0.006
+    },
+    "external_GBM_common": {
+      "AUROC": 0.786,
+      "AUROC_95CI": "0.776\u20130.795",
+      "AUPRC": 0.39,
+      "Brier": 0.118,
+      "Calib_slope": 1.038,
+      "ICI": 0.156
+    },
+    "internal_GBM_full": {
+      "AUROC": 0.859,
+      "AUROC_95CI": "0.854\u20130.864",
+      "AUPRC": 0.512,
+      "Brier": 0.074,
+      "Calib_slope": 1.003,
+      "ICI": 0.006
+    },
+    "external_GBM_full": {
+      "AUROC": 0.794,
+      "AUROC_95CI": "0.785\u20130.804",
+      "AUPRC": 0.423,
+      "Brier": 0.112,
+      "Calib_slope": 1.054,
+      "ICI": 0.142
+    },
+    "external_recalibration": {
+      "intercept": -1.174,
+      "slope": 1.054
+    },
+    "ntei_increment_external_AUROC": 0.008600000000000052
+  },
+  "n": {
+    "dev_test": 108265,
+    "external": 59860,
+    "dev_test_events": 4872,
+    "external_events": 6980
+  },
+  "model": "LightGBM",
+  "n_model_features": 211,
+  "events_per_feature_dev": 296.61,
+  "lodo_transportability": [
+    {
+      "held_out_db": "mimic",
+      "train_dbs": "eicu+sicdb",
+      "n": 152722,
+      "events": 23939,
+      "AUROC": 0.838,
+      "AUROC_95CI": "0.833-0.842",
+      "Calib_slope": 1.003,
+      "CITL": 0.252,
+      "ICI_asis": 0.023,
+      "ICI_recal": 0.006
+    },
+    {
+      "held_out_db": "eicu",
+      "train_dbs": "mimic+sicdb",
+      "n": 388957,
+      "events": 38646,
+      "AUROC": 0.809,
+      "AUROC_95CI": "0.805-0.813",
+      "Calib_slope": 0.886,
+      "CITL": -0.842,
+      "ICI_asis": 0.074,
+      "ICI_recal": 0.004
+    },
+    {
+      "held_out_db": "sicdb",
+      "train_dbs": "mimic+eicu",
+      "n": 59860,
+      "events": 6980,
+      "AUROC": 0.789,
+      "AUROC_95CI": "0.780-0.799",
+      "Calib_slope": 1.072,
+      "CITL": -1.214,
+      "ICI_asis": 0.147,
+      "ICI_recal": 0.004
+    }
+  ],
+  "added_value_external": [
+    {
+      "comparison": "GBM - LR_clinical (external)",
+      "dAUROC": 0.068,
+      "CI95": "+0.057 to +0.079"
+    }
+  ],
+  "top_features": [
+    "age",
+    "egfr_current",
+    "urine_rate__last",
+    "resp_rate__mean",
+    "heart_rate__max",
+    "heart_rate__last",
+    "spo2__std",
+    "bicarbonate__slope",
+    "bun__last",
+    "spo2__last",
+    "creat_ratio_last",
+    "bun_creat_ratio",
+    "baseline_scr",
+    "spo2__mean",
+    "spo2__max"
+  ],
+  "landmark_hours": [
+    6,
+    12,
+    24,
+    48
+  ],
+  "created": "2026-05-31T16:39:31.598618"
+}
