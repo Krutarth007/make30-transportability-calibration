@@ -2,6 +2,9 @@
 
 **Cross-continental transportability and calibration drift of a landmark machine-learning model for Major Adverse Kidney Events at 30 days (MAKE30).**
 
+[![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/downloads/release/python-3110/)
+[![PhysioNet](https://img.shields.io/badge/data-PhysioNet%20credentialed-orange.svg)](https://physionet.org)
+
 This repository contains the analysis code and **aggregate** result artifacts for a dynamic prediction study of MAKE30 in critically ill adults, developed on two U.S. ICU databases and externally validated on a European one. The work is reported per TRIPOD+AI and is associated with a manuscript under review.
 
 > ⚠️ **No patient-level data is included in this repository, and none ever can be.** The underlying databases are restricted-access and require individual PhysioNet credentialing. See [Data availability & PhysioNet compliance](#data-availability--physionet-compliance) before cloning, forking, or contributing.
