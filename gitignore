@@ -1,0 +1,106 @@
+# =============================================================================
+# .gitignore — MAKE30 dynamic prediction pipeline
+#
+# PRIMARY PURPOSE: prevent any restricted PhysioNet data, derived cache, or
+# data-derived model from ever entering version control. MIMIC-IV, eICU-CRD,
+# and SICdb are credentialed/contributor-review datasets; their data and any
+# row-level derivatives or trained models must NOT be redistributed.
+# Only aggregate tables, figures, and JSON metric/schema bundles belong here.
+# =============================================================================
+
+# --- Restricted source data (NEVER commit) -----------------------------------
+# Adjust these to wherever your local database roots live, but the safe default
+# is to keep data entirely OUTSIDE the repo tree. These patterns are a backstop.
+data/
+raw/
+mimic*/
+eicu*/
+sicdb*/
+*.dcm
+physionet.org/
+
+# --- Derived cache / intermediate datasets (NEVER commit) ---------------------
+# Row-level derived features = redistribution of restricted data.
+cache/
+*.parquet
+*.feather
+*.pkl
+*.pickle
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.csv.gz
+
+# --- Trained models derived from restricted data (NEVER commit) ---------------
+# Per PhysioNet guidance, models derived from MIMIC are treated as sensitive and
+# should be shared on PhysioNet under the source DUA — not on open repositories.
+*.joblib
+*.model
+*.txt.model
+*.lgb
+*.bin
+*.onnx
+*.ckpt
+*.pt
+*.pth
+models/
+make30_dynamic_model.joblib
+
+# --- ALLOWLIST: aggregate artifacts that ARE safe to commit -------------------
+# (Re-include the specific aggregate JSON files that the broad rules above would
+#  otherwise have to worry about. CSV tables and PNG figures are not ignored.)
+!results_bundle.json
+!feature_manifest.json
+# tables/*.csv and figures/*.png are intentionally NOT ignored.
+
+# --- Jupyter ------------------------------------------------------------------
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+# Tip: run `nbstripout --install` so notebook OUTPUTS (which can embed
+# identifiers/row previews) are cleared automatically on commit.
+
+# --- Python -------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# --- Virtual environments -----------------------------------------------------
+.venv/
+venv/
+env/
+ENV/
+.conda/
+conda-meta/
+
+# --- Tooling / caches ---------------------------------------------------------
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints
+.coverage
+htmlcov/
+
+# --- Environment / secrets ----------------------------------------------------
+.env
+.env.*
+*.local
+config.local.*
+
+# --- OS / editor --------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*~
+
+# --- Logs ---------------------------------------------------------------------
+*.log
+logs/
